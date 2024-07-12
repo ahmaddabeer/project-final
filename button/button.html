@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sparkle Button</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .sparkle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .sparkle-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 80%);
+    filter: blur(20px);
+    animation: sparkle 2s linear infinite;
+  }
+
+  @keyframes sparkle {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(50%, 50%);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<a href="#" class="sparkle-button">Click Me</a>
+
+</body>
+</html>

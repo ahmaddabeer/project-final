@@ -1,0 +1,69 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border box;
+
+}
+
+/* Transform | Transilate */
+
+.transilate {
+    background-color: aqua;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+    border: 10px solid black;
+    
+
+
+}
+
+
+
+
+
+.transform {
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+
+
+
+}
+
+@keyframes rotate {
+    0% {
+
+        background-color: aqua;
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        background-color: blue;
+        
+    }
+
+    100% {
+
+        background-color: rgb(42, 165, 63);
+        transform: rotatey(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+span {
+    font-size: 2vh;
+
+}

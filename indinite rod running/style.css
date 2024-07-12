@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#9bdfff,#009be4);
+}
+
+
+.Infinite {
+    position:relative;
+    height: 160px;
+    width: 800px;
+    background-color:#525252;
+    transform-origin:bottom;
+    transform-style: preserve-3d;
+    transform:perspective(500px) rotateX(30deg)
+}
+
+
+.Infinite::before {
+    content:'';
+    position:absolute;
+    top:50px;
+    left:0;
+    transform:translatey(-50deg);
+    width: 100%;
+    height: 10px;
+    background:linear-gradient()
+}

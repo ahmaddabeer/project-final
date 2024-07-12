@@ -1,0 +1,50 @@
+/* *{
+    margin:0;
+    padding:0;
+    border:box border;
+    background-color:rgba(30, 7, 7, 0.584);
+    color:white;
+} */
+
+/* this is nave code */
+.navebar {
+    background-color:rgba(184, 55, 55, 0.1);
+  
+    height:2rem;
+    width:100vw;
+    
+
+}
+
+/* bars code */
+.bars {
+    display: inline;
+    
+    color:black;
+    
+    height: 5px;
+    width: 10px;
+    margin-bottom: 10px;
+    
+   
+
+}
+
+/* icon code */
+
+.icon {
+    background-image: url(logo.jpg);
+    background-size:cover;
+
+    height: 20px;
+    width: 60px;
+      display:inline-block;
+      padding-top:10px;
+     
+   
+   
+
+    
+}
+
+

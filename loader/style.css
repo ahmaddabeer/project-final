@@ -1,0 +1,115 @@
+.loader {
+
+    background-color: rgb(16, 16, 13);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    
+    
+
+
+
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: t 0.25s ease-in  infinite normal;
+    margin-top: 50vh;
+
+}
+
+
+@keyframes t {
+    0% {
+        transform: rotate(0deg);
+
+
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.red {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    animation: colorr 0.25s ease-in 3s infinite normal;
+}
+
+@keyframes colorr {
+    0% {
+        background-color: red;
+
+    }
+
+    50% {
+        background-color: #0000ff;
+    }
+
+    100% {
+        background-color: bisque;
+
+    }
+}
+
+.green {
+    background-color: green;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    animation: colorg 1s ease-in 3s infinite normal;
+}
+
+@keyframes colorg {
+    0% {
+        background-color: green;
+    }
+
+
+
+    100% {
+        background-color: bisque;
+    }
+}
+
+
+
+.blue {
+    background-color: #0000ff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    animation: colorb 1s ease-in 3s infinite normal;
+}
+
+@keyframes colorb {
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: bisque;
+    }
+}
+
+
+.outter {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(16, 18, 12);
+}
